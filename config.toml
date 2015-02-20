@@ -1,0 +1,5 @@
+baseurl = "http://yourSiteHere"
+languageCode = "it-it"
+title = "Game Coders"
+[params]
+  author = "Sebastian Faltoni"

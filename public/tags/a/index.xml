@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A on Game Coders</title>
+    <link>http://localhost:1313/tags/a/</link>
+    <description>Recent content in A on Game Coders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    
+    
+    
+    <lastBuildDate>Thu, 19 Feb 2015 23:32:01 CET</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/a/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>post3</title>
+      <link>http://localhost:1313/post/post3/</link>
+      <pubDate>Thu, 19 Feb 2015 23:32:01 CET</pubDate>
+      
+      <guid>http://localhost:1313/post/post3/</guid>
+      <description>
+
+&lt;h1 id=&#34;post-3:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;POST 3&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit omnis. Obcaecati, omnis modi facilis. Quod fugiat deserunt animi cum maiores omnis, explicabo aliquam, ullam voluptatum veniam quo amet distinctio natus architecto quae! cum maiores omnis, explicabo aliquam consectetur adipisicing elit&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>post2</title>
+      <link>http://localhost:1313/post/post2/</link>
+      <pubDate>Thu, 19 Feb 2015 23:32:00 CET</pubDate>
+      
+      <guid>http://localhost:1313/post/post2/</guid>
+      <description>
+
+&lt;h1 id=&#34;post-2:5fd2cda0d65f33524ef5f5ee55ef39d1&#34;&gt;POST 2&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>post1</title>
+      <link>http://localhost:1313/post/post1/</link>
+      <pubDate>Thu, 19 Feb 2015 23:31:56 CET</pubDate>
+      
+      <guid>http://localhost:1313/post/post1/</guid>
+      <description>
+
+&lt;h1 id=&#34;post-1:a8158e2ae96b1b34e1f733f49d15bcfd&#34;&gt;POST 1&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 19 Feb 2015 21:57:24 CET</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;about-me:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;ABOUT ME&lt;/h1&gt;
+
+&lt;p&gt;asd asd asd&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

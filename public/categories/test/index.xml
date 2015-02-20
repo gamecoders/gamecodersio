@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Game Coders</title>
+    <link>http://localhost:1313/categories/test/</link>
+    <description>Recent content in Test on Game Coders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    
+    
+    
+    <lastBuildDate>Thu, 19 Feb 2015 23:32:01 CET</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>post3</title>
+      <link>http://localhost:1313/post/post3/</link>
+      <pubDate>Thu, 19 Feb 2015 23:32:01 CET</pubDate>
+      
+      <guid>http://localhost:1313/post/post3/</guid>
+      <description>
+
+&lt;h1 id=&#34;post-3:b3058168f3f01b1a65df5dddd8eebfa5&#34;&gt;POST 3&lt;/h1&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit omnis. Obcaecati, omnis modi facilis. Quod fugiat deserunt animi cum maiores omnis, explicabo aliquam, ullam voluptatum veniam quo amet distinctio natus architecto quae! cum maiores omnis, explicabo aliquam consectetur adipisicing elit&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
