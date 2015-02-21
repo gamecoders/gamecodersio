@@ -1,5 +1,10 @@
 baseurl = "http://yourSiteHere"
 languageCode = "it-it"
 title = "Game Coders"
+Paginate = 5
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
 [params]
   author = "Sebastian Faltoni"
