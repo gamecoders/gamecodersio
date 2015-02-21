@@ -6,5 +6,6 @@ Paginate = 5
   tag = "tags"
   category = "categories"
   series = "series"
+  featured = "featured"
 [params]
   author = "Sebastian Faltoni"

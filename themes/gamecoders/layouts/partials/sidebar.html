@@ -4,44 +4,22 @@
         <div class="col-md-6 hidden-sm hidden-xs">
             <aside class="right-sidebar">
                 <!-- Widget Start -->
+                {{ range $key, $taxonomy := .Site.Taxonomies.featured }}
                 <div class="widget-popular-article">
-                    <h5>Popular Articles</h5>
+                    <h5>{{$key}}</h5>
+                    {{ range $taxonomy.Pages }}
                     <div class="popular-article clearfix">
                         <div class="thumb">
-                            <img src="{{ .Site.BaseUrl }}/images/featured/popular-1.jpg" alt="">
+                            <img src="{{.Params.image}}" alt="">
                         </div>
                         <div class="article-link">
-                            <a href="#">Referee designation for match 61</a>
+                            <a href="{{.Permalink}}">{{.Title}}</a>
                         </div>
                     </div>
-
-                    <div class="popular-article clearfix">
-                        <div class="thumb">
-                            <img src="{{ .Site.BaseUrl }}/images/featured/popular-2.jpg" alt="">
-                        </div>
-                        <div class="article-link">
-                            <a href="#">Referee designation for match 61</a>
-                        </div>
-                    </div>
-
-                    <div class="popular-article clearfix">
-                        <div class="thumb">
-                            <img src="{{ .Site.BaseUrl }}/images/featured/popular-3.jpg" alt="">
-                        </div>
-                        <div class="article-link">
-                            <a href="#">Referee designation for match 61</a>
-                        </div>
-                    </div>
-
-                    <div class="popular-article clearfix">
-                        <div class="thumb">
-                            <img src="{{ .Site.BaseUrl }}/images/featured/popular-4.jpg" alt="">
-                        </div>
-                        <div class="article-link">
-                            <a href="#">Referee designation for match 61</a>
-                        </div>
-                    </div>
+                    {{ end }}
+              
                 </div>
+                {{ end }}
                 <!-- Widget End -->
 
                 <hr class="small">
