@@ -1,0 +1,66 @@
+           {{ $baseurl := .Site.BaseUrl }}
+          <article class="blog-item">
+                    <header>
+                        <h2 class="title">
+                            {{ .Title }}
+                        </h2>
+                        <div class="meta-info">
+                            <img src="{{ $baseurl}}/images/sebastian.jpg" alt="" class="thumb">
+                            <ul>
+                                <li><a href="#">{{ .Site.Params.author }}</a></li>
+                                <li>3rd Apr 2014</li>
+                                   {{ range .Params.categories }}
+                                        <li>
+                                        <a href="{{ $baseurl }}/categories/{{ lower . | urlize }}/index.html" rel="category">{{ . }}</a>
+                                        </li>
+                                    {{ end }} 
+                                <li><a href="{{.RelPermalink}}#disqus_thread">0 Comment</a></li>
+                            </ul>
+                        </div>
+                    </header>
+                    {{ .Content }} 
+                </article>
+
+                <!-- SOCIAL ICON AND POST TAGS -->
+                <div class="social-share">
+                    <div class="row">
+                        <div class="col-sm-13">
+               
+                            <p><strong>Tags: </strong>
+
+                                {{ range .Params.tags }}
+                                    <a href="{{ $baseurl}}/tags/{{ lower . | urlize }}/index.html" rel="tag">{{ . }}</a>
+                                {{ end }}
+                            </p>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="social-icons">
+                                <p><strong>Share This Post:</strong></p>
+                                <ul>
+                                    <li><a href=""><i class="fa flaticon-circle6"></i></a></li>
+                                    <li><a href=""><i class="fa flaticon-twitter4"></i></a></li>
+                                    <li><a href=""><i class="fa flaticon-google7"></i></a></li>
+                                    <li><a href=""><i class="fa flaticon-pinterest1"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of .social-share -->
+
+     <!-- ABOUT THIS AUTHOR -->
+                <div class="about-author">
+                    <div class="row">
+                        <div class="col-sm-4 hidden-xs">
+                            <div class="thumb">
+                                <img src="{{ $baseurl}}/images/sebastian.jpg" alt="author name" class="img-responsive">
+                            </div>
+                        </div>
+                        <div class="col-sm-20">
+                            <div class="desc">
+                                <h5>{{ .Site.Params.author }}</h5>
+                                <p>Sviluppatore su piattaforma .NET sin dalla prima versione, appassionato di Linux, MacOS. Sviluppatore Java, da sempre ha una passione per lo sviluppo di videogames.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of .about-author -->

@@ -1,0 +1,68 @@
+{{ partial "head.html" . }}
+
+<!-- BODY CONTAINER -->
+<div class="container">
+    <div class="row">        
+        <!-- =========================
+             BLOG SECTION 
+        ============================== -->
+        <div class="col-md-18">
+            <div class="blog-style-one content-to-load">
+               
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+
+            {{ range $paginator.Pages }}
+                <article class="blog-item">
+                    <header>
+                        <h2 class="title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h2>
+                        <div class="meta-info">
+                            <img src="{{ .Site.BaseUrl }}/images/sebastian.jpg" alt="" class="thumb">
+                            <ul>
+                                <li><a href="#">{{ .Site.Params.author }}</a></li>
+                                <li>{{ .Date.Format "Mon, Jan 2, 2006" }}</li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">0 Comment</a></li>
+                            </ul>
+                        </div>
+                    </header>
+                       {{ .Summary }}
+                </article>
+                  <hr>
+            {{ end }}
+              
+           
+         <!-- PAGINATION -->
+                <ul class="navigate-page">
+                {{ if ($paginator.HasPrev) }}
+                    <li><a href="  {{ $paginator.Prev.Url}}">Precedente</a></li>
+                {{end}}
+                {{ $activePageNumber := $paginator.PageNumber }}
+                {{range $paginator.Pagers }}
+                    {{ if eq $activePageNumber .PageNumber }}
+                        <li class="active"><a href="{{.Url}}">{{.PageNumber}}</a></li>
+                    {{else}}
+                        <li><a href="{{.Url}}">{{.PageNumber}}</a></li>
+                    {{end}}
+                  {{end}}
+                {{ if ($paginator.HasNext) }}
+                    <li><a href="  {{ $paginator.Next.Url}}">Successivo</a></li>
+                {{end}}
+                </ul>
+                    
+
+                <!-- /PAGINATION -->
+
+            </div>
+        </div>
+        <!-- /END BLOG SECTION -->
+
+
+{{ partial "sidebar.html" .}}
+
+
+    </div>
+</div> <!-- end of .container-fluid -->
+
+{{ partial "footer.html" .}}

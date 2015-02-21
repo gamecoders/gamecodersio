@@ -1,0 +1,41 @@
+{{ partial "head.html" . }}
+
+<!-- BODY CONTAINER -->
+<div class="container">
+    <div class="row">        
+        <!-- =========================
+             BLOG SECTION 
+        ============================== -->
+        <div class="col-md-18">
+            <div class="blog-style-one">
+           
+               {{ partial "content.html" . }}
+    <hr >
+                <!-- COMMENTS SECTION -->
+                <section class="comments-area">
+
+                    {{ partial "disqus.html" .}} 
+                </section> <!-- end of .comments-area -->
+            </div> <!-- end of .blog style one -->
+        </div>
+        <!-- /END BLOG SECTION -->
+
+
+{{ partial "sidebar.html" .}}
+
+
+    </div>
+</div> <!-- end of .container-fluid -->
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'gamecoders'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+{{ partial "footer.html" .}}
