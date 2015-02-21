@@ -18,6 +18,9 @@
                             </ul>
                         </div>
                     </header>
+                    {{ if isset .Params "image" }}
+                        <img src="{{.Params.image}}" alt="" class="img-responsive content">
+                    {{end}}
                     {{ .Content }} 
                 </article>
 

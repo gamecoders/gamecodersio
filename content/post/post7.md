@@ -4,8 +4,8 @@ draft = true
 title = "Player class on java"
 tags = ["news","a"]
 categories = ["test"]
+image = "/images/featured/1.jpg"
 +++
-
 
 <pre class="line-numbers"><code class="language-java">
 public class Player {
