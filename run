@@ -1,1 +1,2 @@
+mkdir data layouts static
 hugo server --theme=gamecoders --buildDrafts --watch

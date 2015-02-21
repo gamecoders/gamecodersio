@@ -1,7 +1,7 @@
 +++
 date = "2015-02-21T23:32:01+01:00"
 draft = true
-title = "post7"
+title = "Player class on java"
 tags = ["news","a"]
 categories = ["test"]
 +++

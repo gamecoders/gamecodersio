@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-
+{{$baseurl:=.Site.BaseUrl}}
 <!-- BODY CONTAINER -->
 <div class="container">
     <div class="row">        
@@ -22,7 +22,11 @@
                             <ul>
                                 <li><a href="#">{{ .Site.Params.author }}</a></li>
                                 <li>{{ .Date.Format "Mon, Jan 2, 2006" }}</li>
-                                <li><a href="#">Marketing</a></li>
+                                    {{ range .Params.categories }}
+                                        <li>
+                                        <a href="{{ $baseurl }}/categories/{{ lower . | urlize }}/index.html" rel="category">{{ . }}</a>
+                                        </li>
+                                    {{ end }} 
                                 <li><a href="#">0 Comment</a></li>
                             </ul>
                         </div>
