@@ -1,4 +1,4 @@
-baseurl = "http://yourSiteHere"
+baseurl = "http://gamecoders.io"
 languageCode = "it-IT"
 title = "Game Coders"
 Paginate = 5
