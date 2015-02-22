@@ -2,8 +2,8 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        version: 0.13-DEV
-        theme: gamecoder
+        version: 0.13
+        theme: gamecoders
         flags: --buildDrafts=true
 deploy:
   steps:
