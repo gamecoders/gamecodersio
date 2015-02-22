@@ -5,7 +5,7 @@ title = "Player class on java"
 tags = ["news","a"]
 categories = ["test"]
 image = "/images/featured/1.jpg"
-featured = ["Popular Articles"]
+featured = ["Featured"]
 +++
 
 <pre class="line-numbers"><code class="language-java">
