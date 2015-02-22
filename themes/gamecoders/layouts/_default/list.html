@@ -1,10 +1,49 @@
 {{ partial "head.html" . }}
-
+{{$baseurl:=.Site.BaseUrl}}
 <!-- BODY CONTAINER -->
 <div class="container">
     <div class="row">        
  
+        <!-- =========================
+             BLOG SECTION 
+        ============================== -->
+        <div class="col-md-18">
+            <div class="blog-style-one content-to-load">
+               
+    		{{ range where .Data.Pages "Section" "post" }}
+                <article class="blog-item">
+                    <header>
+                        <h2 class="title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h2>
+                        <div class="meta-info">
+                            <img src="{{ .Site.BaseUrl }}/images/sebastian.jpg" alt="" class="thumb">
+                            <ul>
+                                <li><a href="#">{{ .Site.Params.author }}</a></li>
+                                <li>{{ .Date.Format "Mon, Jan 2, 2006" }}</li>
+                                    {{ range .Params.categories }}
+                                        <li>
+                                        <a href="{{ $baseurl }}/categories/{{ lower . | urlize }}/index.html" rel="category">{{ . }}</a>
+                                        </li>
+                                    {{ end }} 
+                                <li><a href="#">0 Comment</a></li>
+                            </ul>
+                        </div>
+                    </header>
+                        {{ if isset .Params "image" }}
+                            <img src="{{.Params.image}}" alt="" class="img-responsive content">
+                        {{end}}
+                       {{ .Summary }}
+                </article>
+                  <hr>
+            {{ end }}
+              
+           
+ 
 
+            </div>
+        </div>
+        <!-- /END BLOG SECTION -->
 
 {{ partial "sidebar.html" .}}
 
