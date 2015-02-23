@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Posts on Game Coders </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>http://gamecoders.io/post/</link>
+    <language>it-IT</language>
+    
+    
+    <updated>Sun, 22 Feb 2015 17:30:00 &#43;0100</updated>
+    
+    <item>
+      <title>Video Games X-Plat con LibGDX</title>
+      <link>http://gamecoders.io/post/sviluppo-videogame-con-libgdx/</link>
+      <pubDate>Sun, 22 Feb 2015 17:30:00 &#43;0100</pubDate>
+      
+      <guid>http://gamecoders.io/post/sviluppo-videogame-con-libgdx/</guid>
+      <description>&lt;p&gt;Di recente sono venuto a conoscienza di &lt;a href=&#34;http://libgdx.badlogicgames.com&#34;&gt;LibGDX&lt;/a&gt;, una fantastica libreria per lo sviluppo di videogames cross platform in java. La buona notizia è che è completamente free per uso commerciale e non.&lt;/p&gt;
+
+&lt;p&gt;Le piattaforme che supporta sono iOS, BlackBerry, Windows, Mac, Linux, Android e HTML5, tutte queste piattaforme sono raggiungibili utilizzando la solita code base, per quanto riguarda la parte HTML5, viene sfruttata la tecnologia &lt;a href=&#34;http://www.gwtproject.org&#34;&gt;GWT&lt;/a&gt; creata da google per trasformare il codice Java in Javascript.&lt;/p&gt;
+
+&lt;p&gt;Come si può intendere dal nome, si tratta di una libreria e non di un game engine, di conseguenza sarà compito dello sviluppatore andare ad implementare certe logiche. Il vantaggio che ci da LibGDX è quello di astrarci dalla piattaforma, lasciandoci liberi dai dettagli di basso livello. Resta comunque la possibilità di accedere alle chiamate OpenGL che vengono esposte dalla stessa permettendoci di andare a creare funzionalità più complesse.&lt;/p&gt;
+
+&lt;p&gt;Come libro per la mia formazione ho scelto &lt;a href=&#34;http://www.amazon.it/gp/product/1783554770/ref=as_li_tf_tl?ie=UTF8&amp;camp=3370&amp;creative=23322&amp;creativeASIN=1783554770&amp;linkCode=as2&amp;tag=gamec02-21&#34; nofollow&gt;Learning LibGDX Game Development - Second Edition&lt;/a&gt;&lt;img src=&#34;http://ir-it.amazon-adsystem.com/e/ir?t=gamec02-21&amp;l=as2&amp;o=29&amp;a=1783554770&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; che dalle recensioni mi sembrava il più adatto. Purtroppo come la maggior parte dei libri del settore è in lingua inglese, ma spero presto di condividere qui con voi, degli articoli in lingua italiana dove andrò a spiegare la basi, come creare un progetto e un mini gioco!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gradle Tutorials</title>
+      <link>http://gamecoders.io/post/gradle/</link>
+      <pubDate>Sun, 22 Feb 2015 06:31:56 &#43;0100</pubDate>
+      
+      <guid>http://gamecoders.io/post/gradle/</guid>
+      <description>
+
+&lt;h2 id=&#34;un-interessante-serie-composta-da-3-video-su-gradle:36cfd9e3d5078b1edb7b10402ca6e4e5&#34;&gt;Un interessante serie composta da 3 video su gradle.&lt;/h2&gt;
+
+&lt;div class=&#34;video-player&#34;&gt;
+                        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/vxKN2VSqTMg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt; 
+&lt;hr&gt;
+&lt;div class=&#34;video-player&#34;&gt;
+                        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/7alCuE7cNVQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt; 
+&lt;hr&gt;
+&lt;div class=&#34;video-player&#34;&gt;
+                        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/g56O_HeefBE&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt; 
+</description>
+    </item>
+    
+  </channel>
+</rss>
